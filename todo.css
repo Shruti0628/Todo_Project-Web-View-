@@ -1,0 +1,124 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    height:710px;
+    /* width:1110px; */
+    color:white;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #371C4B;
+    border:1px solid black;
+    border-radius: 12px;
+    text-align:center;
+    padding:20px;
+}
+.profile-icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.icon{
+    font-size: 24px;
+    margin: 0 15px;
+}
+.heading-text{
+    margin-top:2px;
+    font-size:28px ;
+    font-weight: bold;
+    /* margin-right:200px; */
+    padding-right:200px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+.setting{
+    font-size:24px;
+    justify-content: end;
+    align-content: space-between;
+    margin-left:250px;
+    margin-top:15px;
+    position: relative;
+    display: inline-block;
+}
+.tooltip{
+    visibility: hidden;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    /* padding:5px; */
+    white-space:nowrap;
+    transition: opacity 0.3s;
+    transform: translateX(-50%);
+    /* z-index:1;  */
+    bottom:0%;
+    left:50%;
+    opacity:0;
+    position: absolute;
+}
+.setting:hover .tooltip{
+    visibility: visible;
+    opacity:2;
+}
+.setting-text{
+    font-size: small;
+}
+.tooltip[data-position="below"] {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1px; /* Add some space between icon and tooltip */
+}
+.sub-text{
+    font-weight: 100;
+    margin:0;
+    font-size: 10px;
+    text-align: left;   
+    margin-left:60px;
+}
+
+.streamline-text{
+    margin-top: 70px;
+}
+.placeholder{
+    display:flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    margin-left:20px;
+    padding:10px;
+    background-color: white;
+    justify-content: center;
+    margin-bottom:5px;
+}
+.placeholder input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-weight: 100;
+}
+.placeholder-icons{
+    display:flex;
+    gap:-2px;
+    margin-left: auto;
+    color:black;
+}
+.icon{
+    font-size:24px;
+    /* color:black; */
+}
+.task{
+    /* display:inline-block; */
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    margin-right:50px;
+}
